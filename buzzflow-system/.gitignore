@@ -1,0 +1,13 @@
+node_modules/
+.git/
+.ssh/
+.cache/
+.npm/
+.termux/
+*.log
+*.tmp
+*.zip
+*.tar.gz
+*.key
+*.pem
+*.env
