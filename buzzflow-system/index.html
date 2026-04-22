@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BuzzCoreEX</title>
+</head>
+<body style="background:#0f172a;color:#38bdf8;font-family:monospace;">
+  <h1>🐝 BuzzCoreEX UI</h1>
+
+  <button onclick="check()">Check API</button>
+  <pre id="out">Waiting...</pre>
+
+  <script>
+    function check() {
+      fetch("http://127.0.0.1:5000")
+        .then(r => r.json())
+        .then(d => {
+          document.getElementById("out").innerText = JSON.stringify(d, null, 2);
+        })
+        .catch(e => {
+          document.getElementById("out").innerText = "API OFFLINE";
+        });
+    }
+  </script>
+</body>
+</html>
