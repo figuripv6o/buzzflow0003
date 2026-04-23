@@ -1,3 +1,8 @@
+usage: termux-reload-settings
+Use without arguments to reload settings after modifying any of:
+  ~/.termux/colors.properties
+  ~/.termux/font.ttf 
+  ~/.termux/termux.properties
 [🔥 BUZZO COMMANDO MODE INITIATED 🔥]
 [📡 Scanning BLE targets...]
 [🔁 Auto-sync to GitHub & Termux logs]
